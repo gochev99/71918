@@ -1,0 +1,19 @@
+body{
+    background-color: whitesmoke;
+}
+
+.my-inputs {
+    margin: 6px;
+    width: 150px;
+    height: 20px;
+    text-align: right;
+}
+
+#my-select {
+    width: 50px;
+}
+/*why are my input fields not 150x20 but 158x26*/
+
+.my-buttons {
+    margin: 6px;
+}
