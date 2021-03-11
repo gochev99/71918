@@ -9,9 +9,14 @@
 <body>
     <h1>Dynamic Calculator</h1>
     <input id="input-1" class='my-inputs' type="text" onkeyup="func()"> = </input>
-    <input id="input-res" class='my-inputs' type="text" value="0">
+    <input id="input-res" class='my-inputs' type="text">
     <br>
     <button onclick='calc()' class='my-buttons'>Calculate</button>
     <button onclick='clr()' class='my-buttons'>Clear</button>
+    <br>
+    <ul id='my-list'>
+        <li>Enter an expression in the format: number operator number</li>
+        <li>Available operators: &nbsp;&nbsp;+ &nbsp;&nbsp;- &nbsp;&nbsp;* &nbsp;&nbsp;/ &nbsp;&nbsp;^ &nbsp;&nbsp;%</li>
+    </ul>
 </body>
 </html>
