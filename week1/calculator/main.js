@@ -1,5 +1,14 @@
 const body = document.body;
 
+document.onkeydown = function(e) {
+    if (e.key === "Escape") {
+        clr();
+   }
+   else if(e.key === "Enter") {
+       calc();
+   }
+};
+
 function calc() {
     const input1 = document.querySelector('#input-1');
     const input2 = document.querySelector('#input-2');
