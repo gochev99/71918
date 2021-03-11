@@ -1,5 +1,13 @@
 const body = document.body;
 
+document.onkeydown = function(e) {
+    if (e.key === "Escape") {
+        clr();
+   }
+   else if(e.key === "Enter") {
+       calc();
+   }
+};
 
 function func() {
 
