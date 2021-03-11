@@ -3,9 +3,11 @@ const body = document.body;
 document.onkeydown = function(e) {
     if (e.key === "Escape") {
         clr();
+        document.querySelector('#input-1').focus();
    }
    else if(e.key === "Enter") {
        calc();
+       document.querySelector('#input-1').focus();
    }
 };
 
@@ -56,6 +58,8 @@ function calc() {
         case '^': input1.value = Math.pow(+inputs[0], +inputs[2]); break;
         case '%': input1.value = +inputs[0] % +inputs[2]; break;
     }
+
+    input1.focus();
 }
 
 function clr() {
@@ -63,5 +67,6 @@ function clr() {
     const input2 = document.querySelector('#input-res');
 
     input1.value = '';
-    input2.value = 0;
+    input2.value = '';
+    input1.focus();
 }
